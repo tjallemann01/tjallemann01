@@ -1,0 +1,23 @@
+name: Update Recent GitHub Activity
+
+on:
+  schedule:
+    - cron: "43 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update README with recent public activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: tjallemann01
+          MAX_LINES: 5
+          COMMIT_MSG: "chore: update profile activity"

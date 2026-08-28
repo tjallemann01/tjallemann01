@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250">
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.t{font-size:18px;font-weight:700;fill:#58a6ff}.l{font-size:12px;fill:#8b949e}.s{font-size:11px;fill:#6e7681}
+</style>
+<rect width="1000" height="250" rx="8" fill="#0d1117"/>
+<rect x=".5" y=".5" width="999" height="249" rx="8" fill="none" stroke="#30363d"/>
+<text x="24" y="35" class="t">GitHub Activity — Last 30 Days</text>
+<line x1="58" y1="190" x2="966" y2="190" stroke="#30363d"/>
+<line x1="58" y1="75" x2="58" y2="190" stroke="#30363d"/>
+<path d="M58 190 L160 190 L260 190 L360 190 L460 190 L560 190 L660 190 L760 190 L860 190 L966 190"
+      fill="none" stroke="#39d353" stroke-width="3"/>
+<text x="58" y="220" class="s">Run “Update Live Profile Stats” once to populate the graph.</text>
+</svg>

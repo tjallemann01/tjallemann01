@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="165" viewBox="0 0 495 165">
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.t{font-size:18px;font-weight:700;fill:#58a6ff}.l{font-size:12px;fill:#8b949e}.s{font-size:11px;fill:#6e7681}
+</style>
+<rect width="495" height="165" rx="8" fill="#0d1117"/>
+<rect x=".5" y=".5" width="494" height="164" rx="8" fill="none" stroke="#30363d"/>
+<text x="22" y="34" class="t">Most Used Languages</text>
+<rect x="22" y="57" width="451" height="11" rx="5.5" fill="#21262d"/>
+<text x="22" y="94" class="l">Language distribution will be generated from public repositories.</text>
+<text x="22" y="139" class="s">Local SVG · no external rendering service</text>
+</svg>

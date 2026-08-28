@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Jacobo Allemann Castro — Mechatronics Systems Engineering animated cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1727"/>
+      <stop offset="1" stop-color="#050b14"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1f3850" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#grid)"/>
+  <path d="M20 40 H360 L400 80 H800 L840 40 H1180" fill="none" stroke="#24445f" stroke-width="1.4"/>
+  <path d="M20 320 H330 L370 280 H830 L870 320 H1180" fill="none" stroke="#24445f" stroke-width="1.4"/>
+
+  <g opacity="0.75">
+    <circle cx="96" cy="94" r="54" fill="none" stroke="#1d4f73" stroke-width="1"/>
+    <circle cx="96" cy="94" r="38" fill="none" stroke="#2b6d96" stroke-width="1" stroke-dasharray="4 8">
+      <animateTransform attributeName="transform" type="rotate" from="0 96 94" to="360 96 94" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1104" cy="94" r="54" fill="none" stroke="#1d4f73" stroke-width="1"/>
+    <circle cx="1104" cy="94" r="38" fill="none" stroke="#2b6d96" stroke-width="1" stroke-dasharray="4 8">
+      <animateTransform attributeName="transform" type="rotate" from="360 1104 94" to="0 1104 94" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="600" y="102" text-anchor="middle" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="700" letter-spacing="2">JACOBO ALLEMANN CASTRO</text>
+  <text x="600" y="141" text-anchor="middle" fill="#38bdf8" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" letter-spacing="5">MECHATRONICS SYSTEMS ENGINEERING</text>
+  <text x="600" y="174" text-anchor="middle" fill="#a9bdd0" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">ROBOTICS · AUTONOMOUS SYSTEMS · AI · CONTROL · INDUSTRIAL AUTOMATION</text>
+
+  <g transform="translate(125,232)" font-family="Arial, Helvetica, sans-serif">
+    <line x1="0" y1="0" x2="950" y2="0" stroke="#1e557a" stroke-width="2"/>
+    <rect x="0" y="-2" width="950" height="4" fill="url(#beam)" opacity="0.2"/>
+
+    <g fill="#07111f" stroke="#38bdf8" stroke-width="2">
+      <circle cx="0" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="238" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="475" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="713" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="950" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <circle r="6" fill="#7dd3fc" filter="url(#glow)">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M0 0 H950"/>
+    </circle>
+
+    <g fill="#dbeafe" font-size="13" font-weight="600" letter-spacing="1.5">
+      <text x="0" y="31" text-anchor="middle">SENSE</text>
+      <text x="238" y="31" text-anchor="middle">PERCEIVE</text>
+      <text x="475" y="31" text-anchor="middle">DECIDE</text>
+      <text x="713" y="31" text-anchor="middle">CONTROL</text>
+      <text x="950" y="31" text-anchor="middle">ACTUATE</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">
+    <text x="42" y="332" fill="#7dd3fc">SYSTEM INTEGRATION // ONLINE</text>
+    <circle cx="29" cy="328" r="4" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.25s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1158" y="332" text-anchor="end" fill="#647f98">PERCEIVE → DECIDE → CONTROL → ACTUATE → VALIDATE</text>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="2" fill="url(#beam)" opacity="0.8">
+    <animate attributeName="x" values="-1200;1200" dur="6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

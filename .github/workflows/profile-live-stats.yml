@@ -1,0 +1,40 @@
+name: Update Live Profile Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 5 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-live-profile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate live GitHub SVG cards
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/generate_live_profile.py
+
+      - name: Commit refreshed SVG cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live/*.svg
+          if git diff --cached --quiet; then
+            echo "No live profile changes."
+          else
+            git commit -m "chore: refresh live profile stats"
+            git push
+          fi
