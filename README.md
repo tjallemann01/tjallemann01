@@ -1,118 +1,200 @@
-<div align="center">
+<p align="center">
+  <img src="assets/cover-dynamic.svg" alt="Animated engineering profile banner" width="100%">
+</p>
 
-![Jacobo Allemann Castro — animated engineering banner](assets/header.svg)
+<h1 align="center">Jacobo Allemann Castro</h1>
+<h3 align="center">Mechatronics Engineer · Robotics · Artificial Intelligence · Automation · Systems Integration</h3>
 
-### Mechatronics Engineer · Robotics & Autonomous Systems · Applied Artificial Intelligence
+<p align="center">
+  <a href="https://github.com/tjallemann01"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Portfolio-111827?style=for-the-badge&logo=github"></a>
+  <a href="https://www.linkedin.com/in/jacoboallemanncastro"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin"></a>
+  <a href="https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d"><img alt="Harvard CS50AI certificate" src="https://img.shields.io/badge/Harvard-CS50AI%20Certificate-A51C30?style=for-the-badge"></a>
+</p>
 
-**From mechanical design and embedded electronics to computer vision and autonomous intelligence.**
+<p align="center"><strong>PERCEIVE → DECIDE → CONTROL → ACTUATE → VALIDATE</strong></p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-tjallemann01-181717?logo=github&logoColor=white)](https://github.com/tjallemann01)
-[![Harvard CS50AI](https://img.shields.io/badge/Harvard-CS50AI_Certificate-A51C30)](https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Engineering_Projects-2dd4bf)](https://github.com/tjallemann01?tab=repositories)
-
-</div>
+<p align="center">
+  <a href="#engineering-profile">Profile</a> · <a href="#featured-engineering-systems">Engineering Systems</a> · <a href="#harvard-cs50ai--12-completed-projects">Harvard AI</a> · <a href="#technical-toolbox">Toolbox</a> · <a href="#education--professional-practice">Education & Practice</a>
+</p>
 
 ---
 
-## About me
+## Engineering Profile
 
-I'm **Jacobo Allemann Castro**, a **Mechatronics Engineering graduate from Tecnológico de Monterrey** with hands-on experience building intelligent systems that connect **mechanics, electronics, control, software, and AI**.
+**B.S. in Mechatronics Engineering — Tecnológico de Monterrey (2026).** I design, build and integrate intelligent electromechanical systems connecting **mechanical design, sensing, computer vision, embedded computing, control, actuators, safety and testing**.
 
-My work spans autonomous mobile robots, computer vision, motion control, electromechanical design, and applied machine learning. I enjoy turning engineering prototypes into reliable systems, documenting results, and continuously improving through measurement and experimentation.
+My work emphasizes the entire engineering cycle—from subsystem selection and CAD to implementation, troubleshooting and physical validation.
 
-- **Engineering:** mechanical design, CAD, prototyping, sensors and actuators, control systems.
-- **AI & software:** Python, object detection and tracking, TensorFlow, transformers, algorithmic problem-solving.
-- **Systems:** NVIDIA Jetson, embedded computing, motor controllers, and hardware–software integration.
-- **Quality:** Lean Six Sigma Black Belt coursework and process-improvement methodologies.
-- **Languages:** English and Spanish.
+<p align="center"><img src="assets/engineering-loop.svg" alt="Animated mechatronics systems engineering workflow" width="100%"></p>
 
-## Featured engineering projects
+| Discipline | Engineering focus |
+| :-- | :-- |
+| **Autonomous Systems** | Mobile robotics, perception, tracking, motion control and safety supervision |
+| **Intelligent Perception** | YOLO, OpenCV, Intel RealSense and Cognex VisionPro |
+| **Embedded Control** | NVIDIA Jetson, STM32, ESP32, sensors, BLDC/VESC and PID |
+| **Industrial Robotics** | Siemens PLC/TIA Portal, robotic kinematics, manufacturing and systems integration |
+| **Design & Validation** | SolidWorks, prototyping, integration testing, troubleshooting and documentation |
 
-| Project | Engineering focus | Repository |
-|:--|:--|:--|
-| **AMR + AI — Autonomous Mobile Robot** | Real-time person tracking, obstacle awareness, NVIDIA Jetson, Intel RealSense, motor control | [Explore project](https://github.com/tjallemann01/AMR-AI) |
-| **3-DOF Delta Robot — Vision Control** | Parallel robot mechanisms, CAD, machine vision, automation and control | [View repositories](https://github.com/tjallemann01?tab=repositories&q=Delta) |
-| **BattleBot / Embedded Robotics** | Mechatronic integration, mechanisms, electronics and embedded systems | [View repositories](https://github.com/tjallemann01?tab=repositories&q=Battle) |
+---
 
-### Applied robotics highlights
+## Featured Engineering Systems
 
-```text
-Sensors / Cameras
-       |
-       v
-Perception & Tracking  -->  Decision Logic  -->  Motor Control
-       ^                                          |
-       |                                          v
-       +------------ Feedback & Safety -------- Robot
+### 01 — Autonomous Mobile Robot + AI
+
+<a href="https://github.com/tjallemann01/AMR-AI-Autonomous-Mobile-Robot"><img src="assets/amr-card.svg" alt="Animated Autonomous Mobile Robot project card" width="100%"></a>
+
+**Role:** Primary Developer / Systems Integrator. NVIDIA Jetson Orin NX, Intel RealSense, YOLO perception, target tracking, VESC motor control and safety supervision.
+
+**Documented observations:** approximately 20–25 FPS in perception tests; 68/75 valid system tests; 26–28/30 successful real-environment trials under the reported test conditions.
+
+<details><summary><strong>View perception-to-motion architecture</strong></summary>
+
+```mermaid
+flowchart LR
+    A[RealSense and Sensors] --> B[YOLO Detection]
+    B --> C[Target Tracking]
+    C --> D[Motion Decision]
+    D --> E[VESC Motor Control]
+    E --> F[Tracked Drive]
+    F -. Physical Feedback .-> A
+    G[Watchdog and Emergency Stop] --> D
 ```
 
-> **Engineering perspective:** Useful AI becomes more valuable when it works reliably with physical sensors, actuators, safety constraints, and measurable performance.
+</details>
 
-## Harvard CS50AI — 12 completed projects
+**[Explore AMR project →](https://github.com/tjallemann01/AMR-AI-Autonomous-Mobile-Robot)**
 
-I completed **Harvard CS50's Introduction to Artificial Intelligence with Python** and its 12 programming projects, covering search, reasoning, probability, optimization, machine learning, computer vision, reinforcement learning, and natural language processing.
+### 02 — 3-DOF Delta Robot with Computer Vision
 
-**[Verify Harvard CS50AI certificate](https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d)**
+<a href="https://github.com/tjallemann01/3DOF-Delta-Robot-Vision-Control"><img src="assets/delta-card.svg" alt="Animated Delta Robot project card" width="100%"></a>
 
-| Project | Core concepts | Repository |
-|:--|:--|:--|
-| Degrees | Breadth-first search, graph traversal | [CS50AI-Degrees](https://github.com/tjallemann01/CS50AI-Degrees) |
-| Tic-Tac-Toe | Minimax, game theory | [CS50AI-TicTacToe](https://github.com/tjallemann01/CS50AI-TicTacToe) |
-| Knights | Propositional logic, knowledge bases | [CS50AI-Knights](https://github.com/tjallemann01/CS50AI-Knights) |
-| Minesweeper | Logical inference, intelligent agents | [CS50AI-Minesweeper](https://github.com/tjallemann01/CS50AI-Minesweeper) |
-| PageRank | Markov chains, probability, sampling | [CS50AI-PageRank](https://github.com/tjallemann01/CS50AI-PageRank) |
-| Heredity | Bayesian inference, joint probability | [CS50AI-Heredity](https://github.com/tjallemann01/CS50AI-Heredity) |
-| Crossword | Constraint satisfaction, backtracking | [CS50AI-Crossword](https://github.com/tjallemann01/CS50AI-Crossword) |
-| Shopping | Classification, k-nearest neighbors | [CS50AI-Shopping](https://github.com/tjallemann01/CS50AI-Shopping) |
-| Nim | Q-learning, reinforcement learning | [CS50AI-Nim](https://github.com/tjallemann01/CS50AI-Nim) |
-| Traffic | Neural networks, image classification | [CS50AI-Traffic](https://github.com/tjallemann01/CS50AI-Traffic) |
-| Parser | Context-free grammars, NLP | [CS50AI-Parser](https://github.com/tjallemann01/CS50AI-Parser) |
-| Attention | BERT, transformers, self-attention | [CS50AI-Attention](https://github.com/tjallemann01/CS50AI-Attention) |
+Parallel robotic mechanisms, Siemens PLC/TIA Portal, Cognex VisionPro, Python integration, forward/inverse kinematics and vision-guided manipulation.
 
-*Note: Some course assignment repositories are private to respect academic-integrity guidelines. Their links may not be accessible to other visitors.*
+<details><summary><strong>View robot system flow</strong></summary>
 
-## Tools & technologies
+```mermaid
+flowchart LR
+    CAM[Cognex Camera] --> VP[VisionPro]
+    VP --> PY[Python Supervisor]
+    PY --> KIN[Robot Kinematics]
+    KIN --> PLC[Siemens PLC]
+    PLC --> ROBOT[3-DOF Delta Robot]
+    ROBOT -. Feedback .-> CAM
+```
 
-<div align="center">
+</details>
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
-![NVIDIA](https://img.shields.io/badge/NVIDIA_Jetson-76B900?logo=nvidia&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
-![SolidWorks](https://img.shields.io/badge/SolidWorks-CAD-D71920)
-![Robotics](https://img.shields.io/badge/Robotics-Control_%26_Perception-2dd4bf)
+**[Explore Delta Robot →](https://github.com/tjallemann01/3DOF-Delta-Robot-Vision-Control)**
 
-</div>
+### 03 — BattleBot P_5
 
-## Live GitHub dashboard
+<a href="https://github.com/tjallemann01/BattleBot"><img src="assets/battlebot-card.svg" alt="Animated BattleBot project card" width="100%"></a>
 
-These graphics are **generated from GitHub's API** and **stored in this repository**. A GitHub Actions workflow refreshes them daily and can also be run manually. They do not depend on third-party statistics-image servers.
+FlySky iBUS RC, onboard NVIDIA Jetson vision, YOLO target detection, differential BLDC drive, dual Makerbase MINI VESC controllers and safety-oriented mode arbitration.
 
-<div align="center">
+**Control priority:** `E-STOP > MANUAL > AI`
 
-![Live GitHub statistics](assets/github-stats.svg)
+<details><summary><strong>View control-priority logic</strong></summary>
 
-![Contribution calendar generated from GitHub data](assets/contributions.svg)
+```mermaid
+flowchart TD
+    INPUT[RC Receiver] --> VALID{Signal Valid?}
+    VALID -- No --> STOP[Safe Stop]
+    VALID -- Yes --> ESTOP{E-STOP?}
+    ESTOP -- Yes --> STOP
+    ESTOP -- No --> MODE{Control Mode}
+    MODE --> MAN[Manual Control]
+    MODE --> AI[AI Assistance]
+    MAN --> DRIVE[Dual VESC Drive]
+    AI --> DRIVE
+```
 
-![Languages across public repositories](assets/languages.svg)
+</details>
 
-</div>
+**[Explore BattleBot →](https://github.com/tjallemann01/BattleBot)**
 
-**How to read these charts:** repository and language figures count public, non-fork repositories; the contribution calendar reflects contributions made available to the workflow by GitHub. Private repositories and private contributions may be omitted. The language chart counts each repository's primary language, **not** lines of code or proficiency.
+### 04 — Industrial Drying-Line Automation
 
-> Updates run on a daily schedule (and on demand); GitHub may delay scheduled workflows or disable them after prolonged repository inactivity. See **Actions → Update GitHub profile graphics** to run it manually. GitHub may cache SVGs temporarily.
+<a href="https://github.com/tjallemann01/Industrial-Drying-Line-Automation"><img src="assets/drying-card.svg" alt="Animated industrial automation project card" width="100%"></a>
+
+Thermal and airflow design, STM32 firmware, temperature control, conveyor synchronization, custom electronics and ESP32 monitoring.
+
+<details><summary><strong>View process-control architecture</strong></summary>
+
+```mermaid
+flowchart LR
+    SENSOR[Temperature Sensors] --> MCU[STM32]
+    MCU --> PID[PID Control]
+    PID --> HEATER[Heating System]
+    MCU --> CONVEYOR[Conveyor]
+    MCU --> ESP[ESP32 Monitoring]
+    HEATER -. Feedback .-> SENSOR
+```
+
+</details>
+
+**[Explore Drying-Line Automation →](https://github.com/tjallemann01/Industrial-Drying-Line-Automation)**
 
 ---
 
-<div align="center">
+## Harvard CS50AI — 12 Completed Projects
 
-### Building the next generation of intelligent machines
+<p align="center"><a href="https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d"><img alt="Verified Harvard CS50AI certificate" src="https://img.shields.io/badge/Certificate-Verify%20Harvard%20CS50AI-A51C30?style=for-the-badge"></a></p>
 
-*Robotics · AI · Autonomous Systems · Mechatronics · Continuous Improvement*
+**CS50's Introduction to Artificial Intelligence with Python.** Projects span fundamental search algorithms through probabilistic inference, machine learning, reinforcement learning, computer vision and Transformer-based NLP.
 
-[Explore my repositories](https://github.com/tjallemann01?tab=repositories) · [Verify my Harvard certificate](https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d)
+| Project | AI topic | Repository |
+| :-- | :-- | :-- |
+| Degrees | Breadth-first search | [CS50AI-Degrees](https://github.com/tjallemann01/CS50AI-Degrees) |
+| Tic-Tac-Toe | Minimax, adversarial search | [CS50AI-TicTacToe](https://github.com/tjallemann01/CS50AI-TicTacToe) |
+| Knights | Propositional logic, model checking | [CS50AI-Knights](https://github.com/tjallemann01/CS50AI-Knights) |
+| Minesweeper | Knowledge-based agents | [CS50AI-Minesweeper](https://github.com/tjallemann01/CS50AI-Minesweeper) |
+| PageRank | Probabilistic ranking | [CS50AI-PageRank](https://github.com/tjallemann01/CS50AI-PageRank) |
+| Heredity | Bayesian inference | [CS50AI-Heredity](https://github.com/tjallemann01/CS50AI-Heredity) |
+| Crossword | Constraint satisfaction | [CS50AI-Crossword](https://github.com/tjallemann01/CS50AI-Crossword) |
+| Shopping | Supervised learning, KNN | [CS50AI-Shopping](https://github.com/tjallemann01/CS50AI-Shopping) |
+| Nim | Reinforcement learning, Q-learning | [CS50AI-Nim](https://github.com/tjallemann01/CS50AI-Nim) |
+| Traffic | CNN, TensorFlow, computer vision | [CS50AI-Traffic](https://github.com/tjallemann01/CS50AI-Traffic) |
+| Parser | Natural language parsing, NLTK | [CS50AI-Parser](https://github.com/tjallemann01/CS50AI-Parser) |
+| Attention | BERT, Transformer self-attention | [CS50AI-Attention](https://github.com/tjallemann01/CS50AI-Attention) |
 
-</div>
+> **Academic integrity:** Repositories containing graded CS50AI solutions should remain private under course sharing restrictions. Links to private repositories are visible only to authorized viewers.
+
+---
+
+## Technical Toolbox
+
+| AI & Perception | Control & Embedded | Mechanical & Industrial |
+| :-- | :-- | :-- |
+| Python / TensorFlow | NVIDIA Jetson | SolidWorks / CAD |
+| YOLO / OpenCV | STM32 / ESP32 | Siemens PLC / TIA Portal |
+| RealSense / Cognex | VESC / BLDC motors | Robot kinematics |
+| BERT / NLTK | PID / Watchdogs | CNC / Prototyping |
+| Tracking / Kalman filtering | UART / I²C / PWM | Integration & Validation |
+
+---
+
+## Education & Professional Practice
+
+- **B.S. Mechatronics Engineering — Tecnológico de Monterrey (2026).**
+- **Harvard CS50AI — completed coursework and twelve programming projects.** [Verify certificate](https://cs50.harvard.edu/certificates/4d1848b5-b7cc-4b37-8155-819e19e6054d).
+- **Lean Six Sigma Black Belt coursework** — organizational development, team management and process-improvement methodology.
+- **AI development coursework** — Model Context Protocol (MCP), AI agents, subagents and developer tooling.
+
+### Robotics & Industrial Automation Practice
+
+<a href="https://github.com/tjallemann01"><img src="assets/laser-card.svg" alt="Animated industrial robotic integration card" width="100%"></a>
+
+**G.A. Systems, Inc.** — Industrial equipment and robotic automation experience involving robot programming, technical integration, manufacturing and functional testing. Proprietary details are intentionally omitted.
+
+---
+
+## Design Philosophy
+
+> **Build systems that can perceive, reason, act safely and be tested in the physical world.**
+
+I prioritize controlled experimentation, technical documentation, safety interlocks, measurable validation and responsible engineering practice.
+
+<p align="center"><img src="assets/footer-dynamic.svg" alt="Animated engineering footer" width="100%"></p>
+
+<p align="center"><strong>Explore the work. Understand the system. Build what comes next.</strong></p>

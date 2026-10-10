@@ -1,78 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Jacobo Allemann Castro — Mechatronics Systems Engineering animated cover">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07111f"/>
-      <stop offset="0.55" stop-color="#0b1727"/>
-      <stop offset="1" stop-color="#050b14"/>
-    </linearGradient>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1f3850" stroke-width="0.7" opacity="0.35"/>
-    </pattern>
-  </defs>
-
-  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
-  <rect width="1200" height="360" rx="18" fill="url(#grid)"/>
-  <path d="M20 40 H360 L400 80 H800 L840 40 H1180" fill="none" stroke="#24445f" stroke-width="1.4"/>
-  <path d="M20 320 H330 L370 280 H830 L870 320 H1180" fill="none" stroke="#24445f" stroke-width="1.4"/>
-
-  <g opacity="0.75">
-    <circle cx="96" cy="94" r="54" fill="none" stroke="#1d4f73" stroke-width="1"/>
-    <circle cx="96" cy="94" r="38" fill="none" stroke="#2b6d96" stroke-width="1" stroke-dasharray="4 8">
-      <animateTransform attributeName="transform" type="rotate" from="0 96 94" to="360 96 94" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1104" cy="94" r="54" fill="none" stroke="#1d4f73" stroke-width="1"/>
-    <circle cx="1104" cy="94" r="38" fill="none" stroke="#2b6d96" stroke-width="1" stroke-dasharray="4 8">
-      <animateTransform attributeName="transform" type="rotate" from="360 1104 94" to="0 1104 94" dur="8s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <text x="600" y="102" text-anchor="middle" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="700" letter-spacing="2">JACOBO ALLEMANN CASTRO</text>
-  <text x="600" y="141" text-anchor="middle" fill="#38bdf8" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" letter-spacing="5">MECHATRONICS SYSTEMS ENGINEERING</text>
-  <text x="600" y="174" text-anchor="middle" fill="#a9bdd0" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">ROBOTICS · AUTONOMOUS SYSTEMS · AI · CONTROL · INDUSTRIAL AUTOMATION</text>
-
-  <g transform="translate(125,232)" font-family="Arial, Helvetica, sans-serif">
-    <line x1="0" y1="0" x2="950" y2="0" stroke="#1e557a" stroke-width="2"/>
-    <rect x="0" y="-2" width="950" height="4" fill="url(#beam)" opacity="0.2"/>
-
-    <g fill="#07111f" stroke="#38bdf8" stroke-width="2">
-      <circle cx="0" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" repeatCount="indefinite"/></circle>
-      <circle cx="238" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="0.5s" repeatCount="indefinite"/></circle>
-      <circle cx="475" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="1s" repeatCount="indefinite"/></circle>
-      <circle cx="713" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="1.5s" repeatCount="indefinite"/></circle>
-      <circle cx="950" cy="0" r="10"><animate attributeName="r" values="8;13;8" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
-    </g>
-
-    <circle r="6" fill="#7dd3fc" filter="url(#glow)">
-      <animateMotion dur="5s" repeatCount="indefinite" path="M0 0 H950"/>
-    </circle>
-
-    <g fill="#dbeafe" font-size="13" font-weight="600" letter-spacing="1.5">
-      <text x="0" y="31" text-anchor="middle">SENSE</text>
-      <text x="238" y="31" text-anchor="middle">PERCEIVE</text>
-      <text x="475" y="31" text-anchor="middle">DECIDE</text>
-      <text x="713" y="31" text-anchor="middle">CONTROL</text>
-      <text x="950" y="31" text-anchor="middle">ACTUATE</text>
-    </g>
-  </g>
-
-  <g font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">
-    <text x="42" y="332" fill="#7dd3fc">SYSTEM INTEGRATION // ONLINE</text>
-    <circle cx="29" cy="328" r="4" fill="#22c55e">
-      <animate attributeName="opacity" values="1;0.25;1" dur="1.25s" repeatCount="indefinite"/>
-    </circle>
-    <text x="1158" y="332" text-anchor="end" fill="#647f98">PERCEIVE → DECIDE → CONTROL → ACTUATE → VALIDATE</text>
-  </g>
-
-  <rect x="0" y="0" width="1200" height="2" fill="url(#beam)" opacity="0.8">
-    <animate attributeName="x" values="-1200;1200" dur="6s" repeatCount="indefinite"/>
-  </rect>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="310" viewBox="0 0 1100 310" role="img" aria-label="cover-dynamic.svg"><style>
+ .bg{fill:#081326}.panel{fill:#0e2340;stroke:#28608a;stroke-width:1.5}.ink{fill:#eaf7ff;font-family:Arial,Helvetica,sans-serif}.dim{fill:#96b4d1;font-family:Arial,Helvetica,sans-serif}.accent{fill:#42d9e8}.line{fill:none;stroke:#269db8;stroke-width:2}.glow{filter:url(#glow)}
+ .blink{animation:blink 2.7s ease-in-out infinite}.dash{stroke-dasharray:8 15;animation:travel 7s linear infinite}.float{animation:float 5s ease-in-out infinite}.pulse{animation:pulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.trace{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 4s ease-in-out forwards}
+ @keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}@keyframes travel{to{stroke-dashoffset:-230}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes pulse{0%,100%{opacity:.35;transform:scale(.93)}50%{opacity:1;transform:scale(1.08)}}@keyframes draw{to{stroke-dashoffset:0}}
+ @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1026"/><stop offset=".55" stop-color="#103154"/><stop offset="1" stop-color="#061324"/></linearGradient><linearGradient id="teal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#40d7e9"/><stop offset="1" stop-color="#4c86f7"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1100" height="310" rx="18" fill="url(#bggrad)"/>
+<path d="M0 245 Q250 200 560 265 T1100 220" stroke="#24688a" stroke-width="2" fill="none" opacity=".6"/>
+<g opacity=".25"><path d="M0 0V310" stroke="#28608a"/><path d="M45 0V310" stroke="#28608a"/><path d="M90 0V310" stroke="#28608a"/><path d="M135 0V310" stroke="#28608a"/><path d="M180 0V310" stroke="#28608a"/><path d="M225 0V310" stroke="#28608a"/><path d="M270 0V310" stroke="#28608a"/><path d="M315 0V310" stroke="#28608a"/><path d="M360 0V310" stroke="#28608a"/><path d="M405 0V310" stroke="#28608a"/><path d="M450 0V310" stroke="#28608a"/><path d="M495 0V310" stroke="#28608a"/><path d="M540 0V310" stroke="#28608a"/><path d="M585 0V310" stroke="#28608a"/><path d="M630 0V310" stroke="#28608a"/><path d="M675 0V310" stroke="#28608a"/><path d="M720 0V310" stroke="#28608a"/><path d="M765 0V310" stroke="#28608a"/><path d="M810 0V310" stroke="#28608a"/><path d="M855 0V310" stroke="#28608a"/><path d="M900 0V310" stroke="#28608a"/><path d="M945 0V310" stroke="#28608a"/><path d="M990 0V310" stroke="#28608a"/><path d="M1035 0V310" stroke="#28608a"/><path d="M1080 0V310" stroke="#28608a"/><path d="M0 0H1100" stroke="#28608a"/><path d="M0 45H1100" stroke="#28608a"/><path d="M0 90H1100" stroke="#28608a"/><path d="M0 135H1100" stroke="#28608a"/><path d="M0 180H1100" stroke="#28608a"/><path d="M0 225H1100" stroke="#28608a"/><path d="M0 270H1100" stroke="#28608a"/></g>
+<path class="line dash" d="M40 258 H640 L695 215 H810"/>
+<text x="55" y="89" class="dim" font-size="17" letter-spacing="5">MECHATRONICS / ROBOTICS / ARTIFICIAL INTELLIGENCE</text>
+<text x="55" y="154" class="ink" font-weight="bold" font-size="43">JACOBO ALLEMANN</text>
+<text x="55" y="205" class="ink" font-weight="bold" font-size="43">CASTRO</text>
+<text x="57" y="251" class="dim" font-size="20">From perception to intelligent physical motion</text>
+<g class="float"><circle cx="918" cy="152" r="104" fill="none" stroke="#46cae0" opacity=".35" stroke-width="1.5" stroke-dasharray="5 9"/><circle cx="918" cy="152" r="82" fill="#103e56" stroke="#4dd5e9" opacity=".65"/><circle class="pulse" cx="918" cy="152" r="9" fill="#55f4fa"/>
+<path d="M918 152 L877 112 L838 143" stroke="#74f7ff" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M838 143 L805 174" stroke="#74f7ff" stroke-width="10" stroke-linecap="round"/><path d="M801 173 l-16 -12 m16 12 l-3 19" stroke="#b5faff" stroke-width="5" stroke-linecap="round"/><circle cx="877" cy="112" r="11" fill="#0b2641" stroke="#affcff" stroke-width="5"/><circle cx="838" cy="143" r="9" fill="#0b2641" stroke="#affcff" stroke-width="4"/></g>
+<circle class="blink" cx="1019" cy="61" r="5" fill="#60e4e9"/><circle cx="55" cy="55" r="2" fill="#63bdd9" opacity=".35"/><circle cx="130" cy="99" r="2" fill="#63bdd9" opacity=".35"/><circle cx="205" cy="143" r="2" fill="#63bdd9" opacity=".35"/><circle cx="280" cy="55" r="2" fill="#63bdd9" opacity=".35"/><circle cx="355" cy="99" r="2" fill="#63bdd9" opacity=".35"/><circle cx="430" cy="143" r="2" fill="#63bdd9" opacity=".35"/><circle cx="505" cy="55" r="2" fill="#63bdd9" opacity=".35"/><circle cx="580" cy="99" r="2" fill="#63bdd9" opacity=".35"/><circle cx="655" cy="143" r="2" fill="#63bdd9" opacity=".35"/><circle cx="730" cy="55" r="2" fill="#63bdd9" opacity=".35"/><circle cx="805" cy="99" r="2" fill="#63bdd9" opacity=".35"/><circle cx="880" cy="143" r="2" fill="#63bdd9" opacity=".35"/>
+<path class="trace" d="M40 283 H1060" stroke="url(#teal)" stroke-width="3" fill="none"/></svg>
