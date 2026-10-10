@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Animated banner for Jacobo Allemann Castro">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071525"/><stop offset="1" stop-color="#12345a"/></linearGradient><linearGradient id="line" x1="0" x2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#58a6ff"/></linearGradient></defs>
+<style>
+text {font-family:Arial,Helvetica,sans-serif;}
+@keyframes shine{0%,100%{opacity:.2}50%{opacity:.85}}
+@keyframes pulse{0%,100%{r:5;opacity:.4}50%{r:10;opacity:1}}
+@keyframes alternate{0%,30%{opacity:1}40%,90%{opacity:0}100%{opacity:1}}
+@keyframes alternate2{0%,39%{opacity:0}45%,90%{opacity:1}100%{opacity:0}}
+@keyframes scan{0%{transform:translateX(-950px)}100%{transform:translateX(1050px)}}
+.halo{animation:shine 4s ease-in-out infinite}.dot{animation:pulse 2.6s ease-in-out infinite}.tag1{animation:alternate 9s infinite}.tag2{animation:alternate2 9s infinite}.scan{animation:scan 12s linear infinite}
+</style>
+<rect width="1000" height="260" rx="22" fill="url(#g)"/><g opacity=".16" stroke="#58a6ff"><path d="M0 0 V260"/><path d="M50 0 V260"/><path d="M100 0 V260"/><path d="M150 0 V260"/><path d="M200 0 V260"/><path d="M250 0 V260"/><path d="M300 0 V260"/><path d="M350 0 V260"/><path d="M400 0 V260"/><path d="M450 0 V260"/><path d="M500 0 V260"/><path d="M550 0 V260"/><path d="M600 0 V260"/><path d="M650 0 V260"/><path d="M700 0 V260"/><path d="M750 0 V260"/><path d="M800 0 V260"/><path d="M850 0 V260"/><path d="M900 0 V260"/><path d="M950 0 V260"/><path d="M1000 0 V260"/><path d="M0 0 H1000"/><path d="M0 50 H1000"/><path d="M0 100 H1000"/><path d="M0 150 H1000"/><path d="M0 200 H1000"/><path d="M0 250 H1000"/></g>
+<circle cx="895" cy="110" r="80" fill="none" stroke="#2dd4bf" stroke-width="2" class="halo"/>
+<circle cx="895" cy="110" r="57" fill="none" stroke="#58a6ff" stroke-width="2" stroke-dasharray="10 10" class="halo"/>
+<circle cx="895" cy="110" r="6" fill="#2dd4bf" class="dot"/>
+<rect x="-1000" y="0" width="80" height="260" fill="#ffffff" opacity=".04" transform="skewX(-14)" class="scan"/>
+<text x="48" y="63" fill="#2dd4bf" font-size="19" letter-spacing="4">ENGINEER / BUILDER / RESEARCHER</text>
+<text x="48" y="122" fill="#e6edf3" font-size="45" font-weight="bold">Jacobo Allemann Castro</text>
+<text x="48" y="167" fill="#a8c7ea" font-size="25">Mechatronics  |  Robotics  |  Artificial Intelligence</text>
+<text x="48" y="218" fill="#2dd4bf" font-size="20" class="tag1">AUTONOMOUS ROBOTS • COMPUTER VISION • AUTOMATION</text>
+<text x="48" y="218" fill="#2dd4bf" font-size="20" class="tag2">BUILDING INTELLIGENT MACHINES WITH REAL-WORLD IMPACT</text>
+<rect x="48" y="235" width="580" height="3" rx="2" fill="url(#line)"/>
+</svg>
