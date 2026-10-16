@@ -269,3 +269,12 @@ I prioritize controlled experimentation, technical documentation, safety interlo
 <p align="center"><img src="assets/footer-dynamic.svg" alt="Animated engineering footer" width="100%"></p>
 
 <p align="center"><strong>Explore the work. Understand the system. Build what comes next.</strong></p>
+
+
+---
+
+## Recent GitHub Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+  
